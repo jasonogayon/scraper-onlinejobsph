@@ -32,7 +32,23 @@ help:
 s:
 	@IF EXIST jobs.json del jobs.json
 	@IF EXIST jobs.json rm jobs.json
-	@scrapy crawl jobs -o jobs.json
+	@scrapy crawl jobs -a offset=0 -o jobs.json
+
+y:
+	@IF EXIST jobs.json del jobs.json
+	@IF EXIST jobs.json rm jobs.json
+	@scrapy crawl jobs -a offset=1 -o jobs.json
+
+t:
+	@IF EXIST jobs.json del jobs.json
+	@IF EXIST jobs.json rm jobs.json
+	@scrapy crawl jobs -a offset=$(offset) -o jobs.json
+
+today:
+	@make s
+
+yesterday:
+	@make y
 
 
 

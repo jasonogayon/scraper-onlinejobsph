@@ -10,7 +10,7 @@ If you want to keep tabs of available job posts on the [OnlineJobsPH JobSearch](
 
 ---
 
-### Scrape Job Posts for Today
+## Scrape Job Posts for Today
 
 1. Open a web browser. Go to the remote code repository (<https://github.com/jasonogayon/scraper-onlinejobsph>) and copy its SSH or HTTPS link.
 
@@ -22,13 +22,13 @@ If you want to keep tabs of available job posts on the [OnlineJobsPH JobSearch](
 
 ---
 
-### Scrape Job Posts for Yesterday
+## Scrape Job Posts for Yesterday
 
 1. If you want to look at available job posts yesterday for the keywords that the scraper is set to watch for, run `make y`.
 
 ---
 
-### Scraped Data: jobs.json
+## Scraped Data: jobs.json
 
 Running the scraper generates a `jobs.json` file with job posts data matching the keywords that was search for. On each run, it deletes the file (if it exists) and generates a new one.
 
